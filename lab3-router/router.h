@@ -61,7 +61,7 @@ struct dvNode_t {
 };
 
 struct portInfo_t {
-    uint32_t key; // key: id if type == PORT_PEER; ip if type == PORT_HOST || PORT_EXTERN.
+    uint32_t key; // id when PORT_PEER; ip when otherwise.
     int dis;
     int type;
     portInfo_t();
